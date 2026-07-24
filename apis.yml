@@ -1,7 +1,28 @@
 aid: c2m
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/c2m.png
 name: C2M
-description: C2M is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  C2M A.S. is the company behind Connected2.me, a consumer mobile messaging and
+  social application that lets people create a profile, receive messages, and
+  chat in real time with new contacts around the world. The app supports
+  anonymous and identified conversations, following friends, and online-status
+  notifications, and is distributed on both iOS (App Store) and Android (Google
+  Play). Connected2.me is a consumer-facing product with no public developer
+  program, API, or SDK surface at this time; its published surface is limited to
+  the marketing site, the mobile apps, and its legal documents (Terms of Service
+  and Privacy Policy). C2M was surfaced as a portfolio company of 500 Global and
+  added to the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/c2m/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Social
+- Messaging
+- Chat
+- Mobile
+- Communication
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/c2m-domain-security.yml
 - type: Website
   url: https://connected2.me
+- type: TermsOfService
+  url: https://connected2.me/en/terms
+- type: PrivacyPolicy
+  url: https://connected2.me/en/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
